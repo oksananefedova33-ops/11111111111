@@ -93,6 +93,35 @@ body {
   border: 2px solid #2ea8ff;
 }
 
+/* Mobile text scaling */
+.stage.editing-mobile .el[data-type="text"] {
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+}
+
+.stage.editing-mobile .el[data-type="text"] * {
+  font-size: inherit !important;
+}
+
+/* Mobile button scaling */
+.stage.editing-mobile .el[data-type="linkbtn"] a,
+.stage.editing-mobile .el[data-type="filebtn"] a {
+  font-size: 13px !important;
+  padding: 8px 12px !important;
+  min-height: 32px !important;
+}
+
+/* Mobile language badge scaling */
+.stage.editing-mobile .el[data-type="langbadge"] select {
+  font-size: 12px !important;
+  padding: 6px 12px !important;
+}
+
+/* Mobile elements general scaling */
+.stage.editing-mobile .el {
+  transform-origin: top left;
+}
+
 /* === DEVICE INDICATOR === */
 .device-indicator {
   position: fixed;
